@@ -16,7 +16,7 @@
         border-radius: 3px;
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    
+ 
         &--front{
             background-color: $color-white;
         }
@@ -53,6 +53,9 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); //To make sure the clip path also works on all types of browsers
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    
 
         &--1{
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
