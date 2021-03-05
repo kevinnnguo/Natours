@@ -15,6 +15,16 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         cursor: pointer;
         text-align: center;
+
+        @include respond(tab-port){
+            right: 4rem;
+            top: 4rem;
+        }
+
+        @include respond(phone){
+            right: 3rem;
+            top: 3rem;
+        }
     }
 
     &__background{
@@ -28,6 +38,16 @@
         z-index: 1000;
         //transform: scale(80);
         transition: all .8s cubic-bezier(0.83, 0, 0.17, 1);
+
+        @include respond(tab-port){
+            right: 4.5rem;
+            top: 4.5rem;
+        }
+
+        @include respond(phone){
+            right: 3.5rem;
+            top: 3.5rem;
+        }
     }
 
     &__nav{
@@ -126,7 +146,7 @@
 
     &__button:hover &__icon::before{
         top: -1rem;
-        //transform-origin: right; to specify the direction of rotation
+        //transform-origin: right; to specify the direction of rotationc
     }
 
     &__button:hover &__icon::after{
