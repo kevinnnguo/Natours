@@ -1,9 +1,13 @@
 .card {
     //FUNTIONALITY
-    perspective: 150rem;
-    -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
+    perspective: 150rem;
+
+    @-moz-document url-prefix() {
+        perspective:0;
+        -moz-perspective:0;
+    }
 
     &__side {
         height: 52rem;
@@ -150,7 +154,8 @@
         font-weight: 100;
     }
 
-    @include respond(tab-port) {
+    @media only screen and (max-width: 56.25em) ,
+        only screen and (hover:none) { 
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
